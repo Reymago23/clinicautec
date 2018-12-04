@@ -109,7 +109,7 @@ public class ConsultaController {
 		
 		c.setEstadoConsulta(consulta.getEstadoConsulta());
 		
-       return new ResponseEntity<Consulta>(consultaRepository.save(c), HttpStatus.CREATED);
+       return new ResponseEntity<Consulta>(consultaRepository.save(c), HttpStatus.OK);
 	}
 	
 	

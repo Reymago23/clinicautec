@@ -23,9 +23,6 @@ public class Recetas implements Serializable {
 	@Column(name="fecha_prescripcion")
 	private String fechaPrescripcion;
 	
-	@Column(name="password")
-	private String password;
-	
 	@Column(name="farmaco")
 	private String farmaco;
 	
@@ -60,13 +57,6 @@ public class Recetas implements Serializable {
 		this.fechaPrescripcion = fechaPrescripcion;
 	}
 
-	public String getPassword() {
-		return password;
-	}
-
-	public void setPassword(String password) {
-		this.password = password;
-	}
 
 	public String getFarmaco() {
 		return farmaco;
