@@ -7,5 +7,6 @@ import com.utecws.entity.Paciente;
 public interface PacienteRepository extends JpaRepository<Paciente, String> {
 	
 	Paciente getPacienteByDui(String dui);
+	Paciente getPacienteByDuiAndClave(String dui, String clave);
 
 }
